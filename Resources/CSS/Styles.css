@@ -13,8 +13,6 @@
 
     display: grid;
     grid-template-columns: 50px 1fr 5fr;
-
-    background-color: white;
 }
 
 #header-img {
@@ -49,18 +47,25 @@
     margin-left: 10px;
 }
 
-body {
-    background-color: black;
+
+/*-------------------Home page--------------------*/
+
+#home-page {
+    max-height: 1028px;
+    height: 1028px;
+    width: 100%;
+
+    position: relative;
 }
 
 #noise-background {
     height: auto;
     width: 100%;
 
-    position: absolute;
+    position: fixed;
     z-index: -1;
 
-    filter: opacity(5%);
+    filter: opacity(10%);
 }
 
 #home-galaxy-vector {
@@ -69,6 +74,24 @@ body {
     top: 35%;
     bottom: 8.5%;
     z-index: -1;
+}
+
+#home-triangle {
+    position: absolute;
+    left: 0;
+    top: 167px;
+    z-index: -1;
+}
+
+#email-div-title {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 13%;
+
+    display: flex;
+    justify-content: center;
 }
 
 #email-div {
@@ -87,5 +110,28 @@ body {
     align-items:center;
 
     text-align: center;
-    background-color: #c4c4c4;
 }
+
+
+/*-------------------Product video page--------------------*/
+
+#product-video-page {
+    max-height: 1028px;
+    height: 1fr;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-galaxy-vector {
+    z-index: -1;
+}
+
+
+
+/*-------------------Product card page--------------------*/
+
