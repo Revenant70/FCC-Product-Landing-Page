@@ -1,15 +1,37 @@
+* {
+    --main-text-color: white;
+}
+
 #header {
     background-color: white;
 }
+
+
+/*-------------------Home page--------------------*/
+
 
 body {
     background-color: black;
 }
 
 #email-div-title {
-    color: white;
+    color: var(--main-text-color);
 }
 
-#email-div {
-    background-color: #c4c4c4;
+#email-rectangle {
+    background-color: #C4C4C4;
 }
+
+
+/*-------------------Product video page--------------------*/
+
+#product-left h2, p {
+    color: var(--main-text-color);
+}
+
+
+
+
+
+
+/*-------------------Product card page--------------------*/
