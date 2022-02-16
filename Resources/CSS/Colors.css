@@ -2,6 +2,10 @@
     --main-text-color: white;
 }
 
+h1, h2, p {
+    color: var(--main-text-color)
+}
+
 #header {
     background-color: white;
 }
@@ -14,9 +18,6 @@ body {
     background-color: black;
 }
 
-#email-div-title {
-    color: var(--main-text-color);
-}
 
 #email-rectangle {
     background-color: #C4C4C4;
@@ -25,13 +26,10 @@ body {
 
 /*-------------------Product video page--------------------*/
 
-#product-left h2, p {
-    color: var(--main-text-color);
-}
-
-
-
-
 
 
 /*-------------------Product card page--------------------*/
+
+.product-cards { 
+    background-color: #C4C4C4;
+}
