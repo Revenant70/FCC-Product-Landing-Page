@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Resources/CSS/Styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Resources/CSS/Styles.css">
+    <link rel="stylesheet" type="text/css" href="/Resources/CSS/Typography.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fcc95a7385.js" crossorigin="anonymous"></script>
     <title>FCC-Product-Landing-Page</title>
-</head>
-<body>
+  </head>
+  
+  <body>
     <header id="header">
-        <img id="header-img">
-        <nav id="nav-bar">
-                <ul>
-                    <img src="/Resources/SVGs/top-navbar/Home-link-icon.svg" alt="home icon">
-                    <li class="nav-link">Home</li>
-                    <img src="/Resources/SVGs/top-navbar/ProductVideo-link-icon.svg" alt="product video icon">
-                    <li class="nav-link">Product Video</li>
-                    <img src="/Resources/SVGs/top-navbar/Pricing-link-icon.svg" alt="pricing icon"> 
-                    <li class="nav-link">Pricing</li>
-                </ul>
-        </nav>
+      <nav id="nav-bar">
+        <i class="fa-solid fa-rocket fa-2x" id="header-img"></i>
+        <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#product-video-page" class="nav-link"><i class="fa-solid fa-video"></i>Product Video</a>
+        <a href="#product-cards-page" class="nav-link"><i class="fa-solid fa-tags"></i>Pricing</a>
+      </nav>
     </header>
-    <div id="Home">
-        <div id="email-form-container">
-            <h1>Put Your Email for a free coupon</h1>
-            <form id="form">
-                <label>
-                    <input type="email" placeholder="Enter email here..." required>                    
-                </label>
-                <label>
-                    <button type="button" value="https://www.freecodecamp.com/email-submit" id="submit">Submit</button>             
-                </label>
-            </form>
-            <img src="/Resources/SVGs/Homepage-galaxy-vector.svg" alt="galaxy-image">                
-        </div>
+    <div id="home">
+      <div id="email-form-container">
+        <h1>Put Your Email for a free coupon</h1>
+        <form id="form">
+          <label>
+            <input id="email" type="email" placeholder="Enter email here..." required>
+          </label>
+          <div id="button">
+            <button type="button" value="https://www.freecodecamp.com/email-submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+       <img src="https://raw.githubusercontent.com/Revenant70/FCC-Product-Landing-Page/8095d974dcd6883da6cdbf603be18f68b86980e4/Resources/SVGs/Homepage-galaxy-vector.svg" alt="galaxy-image" id="home-galaxy-vector">
     </div>
     <div id="product-video-page">
+      <div id="product-video-main">
+        <div id="product-video-left">
         <h2>Product video</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
-        <iframe width="920" height="480" src="https://www.youtube.com/embed/ZPrB3WvnZpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <img src="/Resources/SVGs/Product-video-page-vector.svg" alt="galaxy-image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
+        </div>
+        <div id="product-video-right">
+      <iframe id="video" width="920" height="480" src="https://www.youtube.com/embed/ZPrB3WvnZpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <img src="https://raw.githubusercontent.com/Revenant70/FCC-Product-Landing-Page/8095d974dcd6883da6cdbf603be18f68b86980e4/Resources/SVGs/Product-video-page-vector.svg" alt="galaxy-image" id="product-galaxy-vector">
     </div>
     <div id="product-cards-page">
-        <div id="product-cards">
-            <div id="card1">
-                <h3>Product #1</h3>
-            </div>
-            <div id="card2">
-                <h3>Product #2</h3>
-            </div>
-            <div id="card3">
-                <h3>Product #3</h3>
-            </div>
-            <div id="card4">
-                <h3>Product #4</h3>
-            </div>
-            <div id="bottom-navbar">
-                <span>
-                    Copyright 2022, Space Exploration
-                </span>
-                <ul>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <img src="/Resources/SVGs/Product-card-page-vecter-left.svg" alt="galaxy-image">
-            <img src="/Resources/SVGs/Product-card-page-vector-right.svg" alt="galaxy-image">
+        <div id="product-cards-container">
+              <div id="card1" class="product-card">
+                <h3>Trip to outer atmosphere</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
+                <p class="trip-price">$100,000</p>
+              </div>
+              <div id="card2" class="product-card">
+                <h3>Live in space for a week</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
+                <p class="trip-price">$700,000</p>
+              </div>
+              <div id="card3" class="product-card">
+                <h3>Go to the Moon</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
+                <p class="trip-price">$1,000,000</p>
+              </div>
+              <div id="card4" class="product-card">
+                <h3>Go on a trip to Mars</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing aliqua. At volutpat diam ut venenatis. Eget dolor morbi non arcu risus quis varius quam quisque. Pretium quam vulputate dignissim suspendisse in est ante in.</p>
+                <p class="trip-price">$2,000,000</p>
+              </div>
         </div>
+        <div id="bottom-navbar">
+            <span>
+              Copyright 2022, Space Exploration
+            </span>
+            <ul>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Contact</a>
+            </ul>
+        </div>
+        <img src="https://raw.githubusercontent.com/Revenant70/FCC-Product-Landing-Page/8095d974dcd6883da6cdbf603be18f68b86980e4/Resources/SVGs/Product-card-page-vecter-left.svg" alt="galaxy-image" id="product-cards-galaxy-left">
+        <img src="https://raw.githubusercontent.com/Revenant70/FCC-Product-Landing-Page/8095d974dcd6883da6cdbf603be18f68b86980e4/Resources/SVGs/Product-card-page-vector-right.svg" alt="galaxy-image" id="product-cards-galaxy-right">
     </div>
-</body>
+  </body>
 </html>
